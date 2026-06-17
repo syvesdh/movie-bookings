@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* ── Luxury / Editorial design tokens (design-style.md) ──────────────────── */
+@theme {
+  --color-bg: #f9f8f6; /* Warm Alabaster */
+  --color-fg: #1a1a1a; /* Rich Charcoal */
+  --color-taupe: #ebe5de; /* Pale Taupe — muted surface */
+  --color-warmgrey: #6c6863; /* Warm Grey — secondary text */
+  --color-gold: #d4af37; /* Metallic Gold — accent only */
+
+  --font-serif: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --radius: 0px;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  background: var(--color-bg);
+  color: var(--color-fg);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Strictly rectangular — kill any inherited rounding. */
+* {
+  border-radius: 0 !important;
+}
+
+/* Editorial helpers ------------------------------------------------------- */
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Tiny uppercase overline label */
+.overline {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--color-warmgrey);
+}
+
+/* Vertical decorative side label */
+.vertical-label {
+  writing-mode: vertical-rl;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  font-size: 0.625rem;
+}
+
+/* Drop cap for the first paragraph of editorial copy */
+.dropcap::first-letter {
+  font-family: var(--font-serif);
+  float: left;
+  font-size: 4.5rem;
+  line-height: 0.8;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  font-weight: 400;
+}
+
+/* FAQ / accordion fade-in */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in {
+  animation: fadeInUp 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+/* Reduced motion: drop transforms, keep state changes legible */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
