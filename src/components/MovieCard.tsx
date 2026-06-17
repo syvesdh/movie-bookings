@@ -14,7 +14,7 @@ export function MovieCard({ movie, index }: { movie: Movie; index: number }) {
         <div className="pointer-events-none absolute inset-0 z-20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.06)]" />
         {/* vertical decorative label */}
         <span className="vertical-label absolute left-3 top-4 z-20 text-[#f9f8f6] mix-blend-difference">
-          Now Showing / {vol}
+          Steven&apos;s Cinéma / {vol}
         </span>
         {movie.poster_url && (
           <Image

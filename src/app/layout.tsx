@@ -21,9 +21,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Cinéma — Editorial Booking",
+  title: "Steven's Cinéma — Editorial Booking",
   description:
-    "A curated cinema booking experience. Reserve your seat with intention.",
+    "Steven's Cinéma. A curated cinema booking experience. Reserve your seat with intention.",
 };
 
 export default function RootLayout({

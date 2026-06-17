@@ -6,10 +6,10 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-8 py-6 md:px-16">
         <Link href="/" className="group flex items-baseline gap-3">
           <span className="font-serif text-2xl tracking-tight md:text-3xl">
-            Cinéma
+            Steven<span className="italic text-[#d4af37]">&apos;s</span> Cinéma
           </span>
           <span className="hidden h-px w-8 bg-[#1a1a1a]/40 md:block" />
-          <span className="overline hidden md:block">Editorial Vol. 01</span>
+          <span className="overline hidden md:block">By Steven · Vol. 01</span>
         </Link>
         <nav className="flex items-center gap-8">
           <Link
@@ -19,7 +19,7 @@ export function SiteHeader() {
             Now Showing
           </Link>
           <span className="overline hidden text-[#6c6863] sm:block">
-            Est. 2026
+            Curated by Steven · Est. 2026
           </span>
         </nav>
       </div>

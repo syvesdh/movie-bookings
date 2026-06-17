@@ -46,6 +46,15 @@ export default async function ConfirmedPage({
 
           {/* Ticket */}
           <div className="mt-12 border-t-4 border-t-[#d4af37] bg-[#1a1a1a] p-8 text-[#f9f8f6] shadow-[0_8px_32px_rgba(0,0,0,0.18)] md:p-12">
+            <div className="mb-8 flex items-center justify-between">
+              <span className="font-serif text-lg">
+                Steven<span className="italic text-[#d4af37]">&apos;s</span> Cinéma
+              </span>
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#ebe5de]/60">
+                Admit {/* seats count */}
+                {booking.seats.length}
+              </span>
+            </div>
             <div className="flex items-start gap-6">
               {booking.show.poster_url && (
                 <Image

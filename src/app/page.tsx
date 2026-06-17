@@ -18,16 +18,16 @@ export default async function HomePage() {
       {/* ── Hero ─────────────────────────────────────────────────────── */}
       <section className="grid grid-cols-1 gap-12 py-20 md:grid-cols-12 md:py-32">
         <div className="md:col-span-10 md:col-start-2">
-          <Overline rule>The Programme — 2026</Overline>
+          <Overline rule>Steven&apos;s Programme — 2026</Overline>
           <h1 className="mt-8 font-serif text-5xl leading-[0.9] tracking-tight sm:text-7xl md:text-8xl lg:text-9xl">
             Cinema, <span className="italic text-[#d4af37]">curated</span>
             <br />
-            for the patient eye.
+            by Steven.
           </h1>
           <p className="mt-10 max-w-xl text-base leading-relaxed text-[#6c6863] md:text-lg">
-            A small, deliberate selection of films — each shown on a single
-            screen, each seat reserved with care. Choose slowly. The best seats
-            are worth the wait.
+            Steven&apos;s small, deliberate selection of films — each shown on a
+            single screen, each seat reserved with care. Choose slowly. The best
+            seats are worth the wait.
           </p>
         </div>
       </section>

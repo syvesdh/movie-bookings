@@ -7,12 +7,12 @@ export function SiteFooter() {
             Reserve with <span className="italic text-[#d4af37]">intention.</span>
           </p>
           <p className="mt-3 max-w-md text-sm leading-relaxed text-[#6c6863]">
-            A curated cinema experience. No two patrons share a seat — every
-            reservation is held, considered, and confirmed.
+            Steven&apos;s Cinéma — a curated experience. No two patrons share a
+            seat; every reservation is held, considered, and confirmed.
           </p>
         </div>
         <p className="overline text-[#6c6863]">
-          © 2026 Cinéma — Editorial Booking
+          © 2026 Steven&apos;s Cinéma — Curated by Steven
         </p>
       </div>
     </footer>

@@ -36,7 +36,7 @@ export default async function MoviePage({
           <div className="group relative overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
             <div className="pointer-events-none absolute inset-0 z-20 shadow-[inset_0_0_0_1px_rgba(0,0,0,0.08)]" />
             <span className="vertical-label absolute left-3 top-4 z-20 text-[#f9f8f6] mix-blend-difference">
-              Feature Presentation
+              Steven&apos;s Feature Presentation
             </span>
             {movie.poster_url && (
               <Image
